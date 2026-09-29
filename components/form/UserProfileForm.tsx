@@ -88,7 +88,7 @@ export const UserProfileForm: React.FC<UserProfileFormProps> = ({
 
     try {
       const response = await fetch("/api/submissions", {
-        method: "pos",
+        method: "post",
         headers: {
           "Content-Type": "application/json",
           "x-idempotency-key": idempotencyKey,
